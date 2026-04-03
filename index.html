@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Плохой UX сайт</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="auth" class="center">
+  <div class="card">
+    <h2>🔐 Регистрация</h2>
+<input id="email" placeholder="Email">
+<input id="nickname" placeholder="Ник в Brawl Stars">
+<input id="age" type="number" placeholder="Возраст">
+<input id="shoe" type="number" placeholder="Размер ноги">
+<input id="password" placeholder="Пароль (A, 1, !)">
+    <button onclick="login()">Зарегистрироваться</button>
+    <p class="hint">Без регистрации нельзя 😈</p>
+  </div>
+</div>
+
+<div id="site" class="hidden">
+  <div class="popup" id="popup">
+    <div class="card popup-card">
+      <p>🍪 Примите cookie или скачайте приложение</p>
+      <button onclick="closePopup()">Принять всё</button>
+    </div>
+  </div>
+
+  <div class="header">
+    <b>💀 Худший сайт</b>
+    <button onclick="openSettings()">⚙️</button>
+  </div>
+
+  <div id="settings" class="hidden card settings">
+    <h3>Настройки</h3>
+    <button onclick="logoutStep1()">Выйти</button>
+  </div>
+
+  <h3 class="title">⭐ Отзывы</h3>
+
+  <div class="review">⭐⭐⭐⭐⭐<br>ЛУЧШИЙ САЙТ 🔥🔥🔥</div>
+  <div class="review">⭐⭐⭐⭐⭐<br>Скачал 100 раз!!!</div>
+
+  <button class="review-btn" onclick="forceReview()">
+    Оставить отзыв (обязательно)
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
